@@ -2887,6 +2887,9 @@
         <ctl name="RX INT2 SPLINE MIX HPHR Switch" value="1" />
     </path>
 
+    <path name="headphones-hifi-filter">
+        <path name="headphones" />
+    </path>
 
     <path name="true-native-mode">
         <ctl name="RX INT1_2 MUX" value="ZERO" />
@@ -2975,6 +2978,11 @@
     <path name="speaker-safe-and-headphones">
         <path name="headphones" />
         <path name="speaker-safe" />
+    </path>
+
+    <path name="speaker-and-headphones-hifi-filter">
+        <path name="headphones" />
+        <path name="speaker" />
     </path>
 
     <path name="speaker-and-line">
