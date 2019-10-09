@@ -24,6 +24,11 @@ $(call inherit-product, device/xiaomi/sagit/device.mk)
 # Inherit some common AOSP stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+# Inherit some common PixelExperience stuff.
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_STOCK_ARCORE := true
+
 # Firmware
 $(call inherit-product-if-exists, vendor/apps/firmware-sagit/config.mk)
 
