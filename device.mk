@@ -32,11 +32,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GoogleCamera
 
-# TOTO: Replace with PE offical version
-# Pixel4 stuff
+# Wallpapers
 PRODUCT_PACKAGES += \
-    WallpapersBReel2019 \
-    PixelTheme
+    WallpapersBReel2019
 
 # Properties
 include $(LOCAL_PATH)/vendor_prop.mk
