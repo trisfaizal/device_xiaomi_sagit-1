@@ -30,7 +30,7 @@ PRODUCT_PACKAGES += \
 
 # GoogleCamera
 PRODUCT_PACKAGES += \
-    GoogleCamera
+    GoogleCameraMod-sagit
 
 # Wallpapers
 PRODUCT_PACKAGES += \
