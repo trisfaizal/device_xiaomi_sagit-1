@@ -28,10 +28,6 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
-# GoogleCamera
-PRODUCT_PACKAGES += \
-    GoogleCameraMod-sagit
-
 # Wallpapers
 PRODUCT_PACKAGES += \
     WallpapersBReel2019
