@@ -4,5 +4,11 @@
     "target_path": "packages/apps/WallpapersBReel2019",
     "branch": "ten",
     "remote": "gitlab"
+  },
+  {
+    "repository": "AOSP-10/vendor_apps_MiuiCamera",
+    "target_path": "vendor/apps/MiuiCamera",
+    "branch": "10",
+    "remote": "github"
   }
 ]
