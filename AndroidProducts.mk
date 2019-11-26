@@ -1,8 +1,8 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_sagit.mk
+    $(LOCAL_DIR)/aicp_sagit.mk
 
 
 COMMON_LUNCH_CHOICES := \
-    aosp_sagit-user \
-    aosp_sagit-userdebug \
-    aosp_sagit-eng
+    aicp_sagit-user \
+    aicp_sagit-userdebug \
+    aicp_sagit-eng

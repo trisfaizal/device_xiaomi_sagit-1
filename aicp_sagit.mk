@@ -21,18 +21,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sagit device
 $(call inherit-product, device/xiaomi/sagit/device.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common AICP stuff.
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
-# Inherit some common PixelExperience stuff.
-TARGET_GAPPS_ARCH := arm64
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_STOCK_ARCORE := true
-
-# Firmware
-$(call inherit-product-if-exists, vendor/apps/firmware-sagit/config.mk)
-
-PRODUCT_NAME := aosp_sagit
+PRODUCT_NAME := aicp_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 6
@@ -44,3 +36,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="sagit-user 9 PKQ1.190118.001 V11.0.3.0.PCAMIXM release-keys"
 
 BUILD_FINGERPRINT := Xiaomi/sagit/sagit:9/PKQ1.190118.001/V11.0.3.0.PCAMIXM:user/release-keys
+
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="Ranko"
