@@ -6,6 +6,12 @@
     "remote": "pixel-gitlab"
   },
   {
+    "repository": "0ranko0P/android_packages_apps_qksms",
+    "target_path": "vendor/apps/QKSMS",
+    "branch": "master",
+    "remote": "github"
+  },
+  {
     "repository": "0ranko0P/packages_apps_googlecameramod",
     "target_path": "packages/apps/GoogleCamera",
     "branch": "master",
