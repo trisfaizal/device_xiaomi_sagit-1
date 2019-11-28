@@ -39,6 +39,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     WallpapersBReel2019
 
+# Message
+$(call inherit-product, vendor/apps/QKSMS/config.mk)
+
 # Properties
 include $(LOCAL_PATH)/vendor_prop.mk
 
