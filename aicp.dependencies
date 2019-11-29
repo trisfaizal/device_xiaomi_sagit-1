@@ -22,5 +22,10 @@
     "target_path": "vendor/apps/QKSMS",
     "branch": "master",
     "remote": "github"
+  },
+  {
+    "repository": "android_packages_apps_Recorder",
+    "target_path": "packages/apps/Recorder",
+    "remote": "lineage"
   }
 ]
