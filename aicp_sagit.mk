@@ -24,6 +24,11 @@ $(call inherit-product, device/xiaomi/sagit/device.mk)
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
+# Build GApps
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_STOCK_ARCORE := true
+
 PRODUCT_NAME := aicp_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
