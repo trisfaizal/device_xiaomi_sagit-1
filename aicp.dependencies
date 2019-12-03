@@ -6,12 +6,6 @@
     "remote": "gitlab"
   },
   {
-    "repository": "AOSP-10/vendor_apps_MiuiCamera",
-    "target_path": "vendor/apps/MiuiCamera",
-    "branch": "10",
-    "remote": "github"
-  },
-  {
     "repository": "0ranko0P/android_packages_apps_qksms",
     "target_path": "vendor/apps/QKSMS",
     "branch": "master",

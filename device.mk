@@ -28,9 +28,6 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service
 
-# MiuiCamera
-$(call inherit-product, vendor/apps/MiuiCamera/config.mk)
-
 # Wallpapers
 PRODUCT_PACKAGES += \
     WallpapersBReel2019
