@@ -31,10 +31,6 @@ PRODUCT_PACKAGES += \
 # MiuiCamera
 $(call inherit-product, vendor/apps/MiuiCamera/config.mk)
 
-# DuckDuckGo
-PRODUCT_PACKAGES += \
-    DuckDuckGo
-
 # Wallpapers
 PRODUCT_PACKAGES += \
     WallpapersBReel2019
