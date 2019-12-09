@@ -57,11 +57,6 @@ void property_override_dual(char const system_prop[], char const vendor_prop[],
 
 void vendor_load_properties()
 {
-    std::string platform = android::base::GetProperty("ro.board.platform", "");
-
-    if (platform != ANDROID_TARGET)
-        return;
-
     property_override("ro.oem_unlock_supported", "0");
 
     // fingerprint
