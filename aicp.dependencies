@@ -16,5 +16,17 @@
     "target_path": "vendor/apps/QKSMS",
     "branch": "master",
     "remote": "github"
+  },
+  {
+    "repository": "0ranko0P/vendor_pixelstyle",
+    "target_path": "vendor/pixelstyle",
+    "branch": "ten",
+    "remote": "github"
+  },
+  {
+    "repository": "vendor_gapps",
+    "target_path": "vendor/gapps",
+    "branch": "ten",
+    "remote": "pixel-gitlab"
   }
 ]
