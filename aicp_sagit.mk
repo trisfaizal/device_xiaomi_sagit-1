@@ -41,3 +41,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="Ranko"
 
+# AICP OTA
+PRODUCT_PROPERTY_OVERRIDES += \
+    lineage.updater.uri=https://gitlab.com/0ranko0P/sagit-ota/-/raw/aicp_q10.0/sagit.json
