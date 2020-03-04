@@ -1,5 +1,6 @@
 /*
    Copyright (c) 2014, The Linux Foundation. All rights reserved.
+                 2020, The Potato Open Sauce Project
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -30,6 +31,7 @@
 #include <stdlib.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
+#include <sys/sysinfo.h>
 
 #include <android-base/properties.h>
 
@@ -51,6 +53,33 @@ void property_override_dual(char const system_prop[], char const vendor_prop[],
     property_override(vendor_prop, value);
 }
 
+void load_6gb()
+{
+  property_override("dalvik.vm.heapstartsize", "16m");
+  property_override("dalvik.vm.heapgrowthlimit", "256m");
+  property_override("dalvik.vm.heaptargetutilization", "0.5");
+  property_override("dalvik.vm.heapmaxfree", "32m");
+}
+
+void load_4gb()
+{
+  property_override("dalvik.vm.heapstartsize", "8m");
+  property_override("dalvik.vm.heapgrowthlimit", "192m");
+  property_override("dalvik.vm.heaptargetutilization", "0.6");
+  property_override("dalvik.vm.heapmaxfree", "16m");
+}
+
+/* Check RAM size for current variant. */
+void checkram_loadprops()
+{
+    struct sysinfo sys;
+    sysinfo(&sys);
+    if (sys.totalram > 4096ull * 1024 * 1024)
+        load_6gb();
+    else
+        load_4gb();
+}
+
 void vendor_load_properties()
 {
     property_override("ro.oem_unlock_supported", "0");
@@ -58,4 +87,6 @@ void vendor_load_properties()
     // fingerprint
     property_override("ro.build.description", "sagit-user 8.0.0 OPR1.170623.027 V9.2.3.0.OCAMIEK release-keys");
     property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
+
+    checkram_loadprops();
 }
