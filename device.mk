@@ -39,5 +39,8 @@ PRODUCT_PACKAGES += \
 # Message
 $(call inherit-product, vendor/apps/QKSMS/config.mk)
 
+# Properties
+include $(LOCAL_PATH)/vendor_prop.mk
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/sagit/sagit-vendor.mk)
