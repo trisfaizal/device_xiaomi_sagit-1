@@ -24,9 +24,9 @@
     "remote": "github"
   },
   {
-    "repository": "vendor_gapps",
+    "repository": "0ranko0P/vendor_gapps",
     "target_path": "vendor/gapps",
     "branch": "ten",
-    "remote": "pixel-gitlab"
+    "remote": "gitlab"
   }
 ]
