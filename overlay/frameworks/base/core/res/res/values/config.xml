@@ -18,18 +18,6 @@
      for different hardware and product builds.  Do not translate. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Display mode remapping table.
-         If the mode names returned by the backend do not match
-         the predefined and translated strings in the Settings
-         app, they can be remapped here. The format is
-         "oldname:newname", one per entry. -->
-    <string-array name="config_displayModeMappings" translatable="false">
-        <item>default4-default:standard</item>
-        <item>warm:reading</item>
-        <item>cool:dynamic</item>
-        <item>37sRGB-N:srgb</item>
-    </string-array>
-
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N  1 zones as follows:
 
@@ -160,16 +148,16 @@
     <dimen name="config_dialogCornerRadius">8.0dip</dimen>
     <!--  Corner radius of system buttons  -->
     <dimen name="config_buttonCornerRadius">4.0dip</dimen>
+
     <!--  Corner radius of system progress bars  -->
     <dimen name="config_progressBarCornerRadius">1000.0dip</dimen>
 
     <dimen name="config_bottomDialogCornerRadius">16.0dip</dimen>
-    <item type="dimen" name="config_fullTaskSnapshotScale">0.8</item>
+
     <integer name="config_maxShortcutTargetsPerApp">8</integer>
     <integer name="config_storageManagerDaystoRetainDefault">60</integer>
 
     <!-- Component name of the default wallpaper. This will be ImageWallpaper if not
          specified -->
     <string name="default_wallpaper_component" translatable="false">com.breel.wallpapers19/com.breel.wallpapers19.doodle.wallpaper.variations.DoodleWallpaperV1</string>
-
 </resources>

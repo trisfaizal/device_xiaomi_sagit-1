@@ -18,30 +18,18 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+BLISS_BUILD_VARIANT := gapps
+
 # Inherit from sagit device
 $(call inherit-product, device/xiaomi/sagit/device.mk)
 
-# Inherit some common AICP stuff.
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+# Inherit some common Bliss stuff.
+$(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 
-# Build GApps
-TARGET_GAPPS_ARCH := arm64
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_STOCK_ARCORE := true
-
-PRODUCT_NAME := aicp_sagit
+PRODUCT_NAME := bliss_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 6
 PRODUCT_MANUFACTURER := Xiaomi
-TARGET_FACE_UNLOCK := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-# AICP Device Maintainers
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Ranko"
-
-# AICP OTA
-PRODUCT_PROPERTY_OVERRIDES += \
-    lineage.updater.uri=https://gitlab.com/0ranko0P/sagit-ota/-/raw/aicp_q10.0/sagit.json

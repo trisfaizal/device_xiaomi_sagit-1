@@ -34,7 +34,7 @@ PRODUCT_PACKAGES += \
 
 # Wallpapers
 PRODUCT_PACKAGES += \
-    PixelLiveWallpaperPrebuilt
+   PixelLiveWallpaperPrebuilt
 
 # Message
 $(call inherit-product, vendor/apps/QKSMS/config.mk)

@@ -22,11 +22,5 @@
     "target_path": "vendor/pixelstyle",
     "branch": "ten",
     "remote": "github"
-  },
-  {
-    "repository": "0ranko0P/vendor_gapps",
-    "target_path": "vendor/gapps",
-    "branch": "ten",
-    "remote": "gitlab"
   }
 ]
