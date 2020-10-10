@@ -32,10 +32,6 @@
 #include <sys/_system_properties.h>
 
 #include <android-base/properties.h>
-#include "property_service.h"
-#include "vendor_init.h"
-
-using android::init::property_set;
 
 void property_override(char const prop[], char const value[])
 {
