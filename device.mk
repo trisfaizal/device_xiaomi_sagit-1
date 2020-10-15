@@ -34,7 +34,8 @@ PRODUCT_PACKAGES += \
 
 # Wallpapers
 PRODUCT_PACKAGES += \
-    WallpapersBReel2017
+    WallpapersBReel2017 \
+    LiveWallpapersPicker
 
 # Message
 $(call inherit-product, vendor/apps/QKSMS/config.mk)
