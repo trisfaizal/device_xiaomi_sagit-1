@@ -19,6 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 BLISS_BUILD_VARIANT := gapps
+TARGET_GAPPS_ARCH := arm64
 
 # Inherit pixel stuff
 $(call inherit-product-if-exists, vendor/pixelstyle/config.mk)
