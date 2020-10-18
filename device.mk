@@ -38,7 +38,8 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker
 
 # Message
-$(call inherit-product, vendor/apps/QKSMS/config.mk)
+PRODUCT_PACKAGES += \
+    QKSMS
 
 # Properties
 include $(LOCAL_PATH)/vendor_prop.mk

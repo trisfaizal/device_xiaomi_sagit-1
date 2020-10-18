@@ -13,7 +13,7 @@
   },
   {
     "repository": "0ranko0P/android_packages_apps_qksms",
-    "target_path": "vendor/apps/QKSMS",
+    "target_path": "packages/apps/QKSMS",
     "branch": "master",
     "remote": "github"
   },
